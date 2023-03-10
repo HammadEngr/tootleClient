@@ -1,0 +1,28 @@
+.sec_one,
+.sec_two,
+.sec_three,
+.booking {
+  margin: 30px 50px;
+}
+.sec_two {
+  border-bottom: 1px solid grey;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  animation-name: stick;
+  animation-duration: 500ms;
+}
+@keyframes stick {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* **********sec two***** */
+
+/*  */
+
+/*  */

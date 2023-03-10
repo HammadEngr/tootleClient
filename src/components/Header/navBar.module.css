@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: rgb(40, 40, 40);
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.main.sticky {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  animation-name: stick;
+  animation-duration: 500ms;
+}
+@keyframes stick {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.title {
+  color: rgb(210, 210, 210);
+  font-family: "Tangerine", cursive;
+  font-size: 3rem;
+}
+.welcome {
+  color: rgb(210, 210, 210);
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-variant: small-caps;
+  letter-spacing: 2px;
+}
+.btn_box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.title,
+.welcome,
+.btn_box {
+  width: 300px;
+}
+.btn,
+.btn_dash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  width: 100px;
+  height: 30px;
+  border-radius: 50px;
+  color: rgb(210, 210, 210);
+  background-color: rgb(80, 80, 80);
+  border: 1px solid rgb(210, 210, 210);
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_dash {
+  width: 200px;
+}
+.btn:hover,
+.btn_dash:hover {
+  cursor: pointer;
+  background-color: rgb(50, 50, 50);
+}
+
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+  .title {
+    font-size: 3rem;
+  }
+  .welcome {
+    font-size: 1rem;
+  }
+  .btn {
+    width: 80px;
+    height: 30px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2.5rem;
+  }
+  .welcome {
+    display: none;
+  }
+}
+@media screen and (max-width: 376px) {
+  .title {
+    font-size: 2rem;
+  }
+  .welcome {
+    display: none;
+  }
+  .btn {
+    width: 70px;
+  }
+}

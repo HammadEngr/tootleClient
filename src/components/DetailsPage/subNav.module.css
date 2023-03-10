@@ -1,0 +1,17 @@
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+}
+.list_items {
+  padding-left: 50px;
+}
+.list_item {
+  padding-left: 20px;
+  text-decoration: none;
+  color: rgb(40, 40, 40);
+  font-size: 0.8rem;
+  font-weight: 700;
+}

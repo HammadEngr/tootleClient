@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap");
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  background-color: rgb(40, 40, 40);
+  padding: 0 20px;
+  border-bottom: 1px solid rgb(210, 210, 210);
+}
+.main.sticky {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  animation-name: stick;
+  animation-duration: 500ms;
+}
+@keyframes stick {
+  from {
+    transform: translateY(-60px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}

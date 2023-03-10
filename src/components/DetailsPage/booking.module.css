@@ -1,0 +1,80 @@
+.booking_title_box {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 48, 104, 1) 0%,
+    rgba(255, 0, 130, 1) 100%
+  );
+  color: white;
+}
+.night {
+  font-weight: 100;
+  font-size: 0.8rem;
+}
+.booking_box {
+  width: 100%;
+  height: fit-content;
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+.book {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow: hidden;
+  width: 100%;
+}
+.label_box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100px;
+  width: 100%;
+  margin-top: 5px;
+  font-size: 1rem;
+  font-variant: small-caps;
+  font-weight: 700;
+  border: 1px solid rgb(210, 210, 210);
+  background-color: rgb(80, 80, 80);
+
+  color: rgb(210, 210, 210);
+}
+
+.checkIn {
+  padding-left: 20px;
+  background-color: transparent;
+  color: rgb(210, 210, 210);
+  border-radius: 10px;
+  font-size: 1rem;
+  font-variant: small-caps;
+  border: none;
+  border: 0.5px solid rgb(210, 210, 210);
+  width: 150px;
+  height: 20px;
+  margin-left: 10px;
+}
+.booking_reserve_btn {
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 48, 104, 1) 0%,
+    rgba(255, 0, 130, 1) 100%
+  );
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  font-variant: small-caps;
+  font-weight: 700;
+  margin-top: 5px;
+}
+.booking_reserve_btn:hover {
+  cursor: pointer;
+}
+.booking_reserve_btn:active {
+  background-color: rgb(255, 23, 85) 0%;
+  transform: scale(120%);
+}

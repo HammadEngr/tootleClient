@@ -1,0 +1,60 @@
+.form {
+  background-color: rgb(60, 60, 60);
+}
+.box {
+  display: flex;
+  gap: 10px;
+}
+.label {
+  width: 200px;
+  color: rgb(210, 210, 210);
+}
+.input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  border: none;
+  text-indent: 10px;
+}
+.btn {
+  height: 30px;
+  width: 100px;
+  background-color: rgb(210, 210, 210);
+  color: rgb(60, 60, 60);
+  border: none;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(180, 180, 180);
+}
+.input.invalid {
+  background-color: rgb(255, 196, 148);
+  border: 1px solid rgb(255, 115, 0);
+}
+@media screen and (max-width: 1256px) {
+}
+@media screen and (max-width: 1100px) {
+  .input {
+    width: 250px;
+  }
+  .label {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 956px) {
+}
+@media screen and (max-width: 772px) {
+  .input {
+    width: 170px;
+  }
+  .label {
+    width: 80px;
+  }
+  .btn {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 600px) {
+}
+@media screen and (max-width: 376px) {
+}

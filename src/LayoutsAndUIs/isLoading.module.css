@@ -1,0 +1,62 @@
+.hasError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.hasError_text {
+  border-radius: 20px;
+  height: 100px;
+  width: 500px;
+  background-color: rgb(40, 40, 40);
+  color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  background: radial-gradient(
+    ellipse at center,
+    #ff3d00 0%,
+    #ff3d00 14%,
+    #fff 15%,
+    #fff 100%
+  );
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+.loader::after,
+.loader::before {
+  content: "";
+  position: absolute;
+  height: 32px;
+  width: 4px;
+  background: #ff3d00;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(0deg);
+  transform-origin: 25% 0;
+  box-sizing: border-box;
+  animation: rotation 10s linear infinite;
+}
+.loader::before {
+  height: 42px;
+  width: 2px;
+  transform: translateX(-50%) rotate(0deg);
+  animation-duration: 1s;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

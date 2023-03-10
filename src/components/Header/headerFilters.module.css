@@ -1,0 +1,62 @@
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 50px;
+  background-color: rgb(80, 80, 80);
+}
+.filter_btn_box {
+  width: fit-content;
+  height: 30px;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.btn0,
+.btn1,
+.btn2 {
+  width: 150px;
+  height: 30px;
+  border: 1px solid rgb(40, 40, 40);
+  transition: transform 200ms ease-in-out;
+}
+.btn0 {
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+}
+.btn3 {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+.btn1:hover,
+.btn2:hover,
+.btn0:hover {
+  cursor: pointer;
+  background-color: rgb(150, 150, 150);
+}
+.btn0.isActive,
+.btn1.isActive,
+.btn2.isActive {
+  background-color: rgb(150, 150, 150);
+  font-weight: 700;
+}
+.btn0:active,
+.btn1:active,
+.btn2:active {
+  transform: scale(150%);
+}
+@media screen and (max-width: 600px) {
+  .btn0,
+  .btn1,
+  .btn2 {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 376px) {
+  .btn0,
+  .btn1,
+  .btn2 {
+    width: 100px;
+  }
+}

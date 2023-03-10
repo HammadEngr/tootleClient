@@ -1,0 +1,16 @@
+.sec_three_heading {
+  font-size: 1rem;
+}
+.keypoints_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+.sub_head {
+  margin-bottom: 5px;
+}
+.key_points {
+  list-style: none;
+}

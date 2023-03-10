@@ -1,0 +1,31 @@
+.form {
+  display: flex;
+  background-color: rgb(76, 76, 76);
+  color: rgb(210, 210, 210);
+}
+.input {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  text-indent: 10px;
+}
+.btn {
+  height: 40px;
+  background-color: black;
+  color: rgb(210, 210, 210);
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(40, 40, 40);
+}
+.back {
+  width: fit-content;
+  color: rgb(210, 210, 210);
+  text-decoration: none;
+}
+.back:hover {
+  text-decoration: underline;
+}

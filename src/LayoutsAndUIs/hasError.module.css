@@ -1,0 +1,16 @@
+.hasError {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+.hasError_text {
+  border-radius: 20px;
+  height: 100px;
+  width: 500px;
+  background-color: rgb(40, 40, 40);
+  color: rgb(210, 210, 210);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
